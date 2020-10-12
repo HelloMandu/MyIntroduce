@@ -33,7 +33,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    border: 1px;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     cursor: default;
@@ -69,15 +68,25 @@ p {
     margin: 4px 0;
 }
 
-#navbar{
+/* javascript를 이용해 바꿀 것
+    background-color: var(--color--white);
+    box-shadow: 3px 1px 15px;
+*/
+.navbar{
+    position: fixed;
     height: 80px;
-    border-bottom: 1px solid black;
-    display: flex;
-    position: sticky;
     top: 0;
     font-weight: var(--weight-bold);
-    background-color: var(--color-white);
     font-size: var(--font-regular);
+    background-color: transparent;
+    width: 100%;
+}
+.navbar__container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .logo{
@@ -90,26 +99,70 @@ p {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
     padding-left: 0;
 }
 
 .navbar__menu__item{
     padding: 12px 18px;
     border-radius: var(--size-border-radius);
-    cursor: pointer;
+    text-align: center;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 .navbar__menu__item:active{
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    color: var(--color-blue);
 }
 
 .navbar__menu__item:hover{
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    color: var(--color-blue);
+}
+
+.hamburger{
+    position: absolute;
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    top: 16px;
+    right: 24px;
+    display: none;
+    cursor: pointer;
+}
+
+.bar1{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.bar2{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.bar3{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.on .bar1{
+    transform: rotate(45deg)  translate(8px, 8px);
+}
+
+.on .bar2{
+    opacity: 0;
+}
+
+.on .bar3{
+    transform: rotate(-45deg) translate(8px, -8px);
 }
 
 #home{
@@ -117,13 +170,41 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 40px;
     text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .home__profile{
     background: center;
     width: 300px;
     height: 300px;
-    border-radius: 50%;
-    border: 2px solid var(--color-light-white);
 }
+
+@media screen and (max-width: 768px){
+    .hamburger{
+        display: inline-block;
+    }
+
+    .navbar__menu{
+        display: none;
+        position: relative;
+        flex-direction: column;
+        top: 64px;
+    }
+
+    .navbar__menu__item{
+        padding: 8px;
+    }
+
+    .on .navbar__menu{
+        display: inline;
+    }
+    
+
+}
+

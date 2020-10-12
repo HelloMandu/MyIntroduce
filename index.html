@@ -13,23 +13,30 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <img class="logo" src="./images/logo-removebg.png" alt="logo image">
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">My work</li>
-            <li class="navbar__menu__item">Testimonial</li>
-            <li class="navbar__menu__item">contact</li>
-        </ul>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <img class="logo" src="./images/logo-removebg.png" alt="logo image">
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item">Home</li>
+                <li class="navbar__menu__item">About</li>
+                <li class="navbar__menu__item">Skills</li>
+                <li class="navbar__menu__item">My work</li>
+                <li class="navbar__menu__item">contact</li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
     </nav>
     <section id="home">
-        <img src="./images/profile.jpg" alt="profile image" class="home__profile">
-        <h1 class="home__title">안녕하세요 조성민입니다</h1>
+        <img src="./images/logo-removebg.png" alt="profile image" class="home__profile">
+        <h1 class="home__title">Sungmin's Portpolio</h1>
         <h2 class="home__description">내 포트폴리오사이트</h2>
     </section>
-    <section id="about">
+    <section id="about" class="section">
+
         <h1>About me</h1>
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum fugit eaque ullam ratione culpa sunt
@@ -70,7 +77,7 @@
             </div>
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="section">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
@@ -113,7 +120,7 @@
             </div>
         </div>
     </section>
-    <section id="work">
+    <section id="work" class="section">
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
@@ -144,7 +151,7 @@
             </a>
         </div>
     </section>
-    <footer id="contact">
+    <footer id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contack__email">tjdals6695@gmail.com</h2>
         <div class="contact__links">
