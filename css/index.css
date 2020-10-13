@@ -43,28 +43,24 @@
 h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
-    color: var(--color-black);
     margin: 16px 0px;
 }
 
 h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
-    color: var(--color-black);
     margin: 8px 0;
 }
 
 h3 {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
-    color: var(--color-black);
     margin: 8px 0;
 }
 
 p {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
-    color: var(--color-black);
     margin: 4px 0;
 }
 
@@ -82,9 +78,10 @@ p {
 
 .navbar-dark{
     background-color: var(--color-white);
-    opacity: .9;
+    opacity: 1;
     box-shadow: 3px 1px 15px;
 }
+
 .navbar__container{
     position: relative;
     display: flex;
@@ -185,14 +182,19 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 200px;
+    top: 100px;
     transition: all 1s ease-in-out;
     opacity: 0;
+    
 }
 
 .splash{
-    top: 150px;
+    top: 50px;
     opacity: 1;
+}
+
+.home__title{
+    font-family: 'Sansita Swashed', cursive;
 }
 
 .home__profile{
@@ -204,7 +206,7 @@ p {
 
 .arrow-up, .fa-angle-double-up{
     position: fixed;
-    bottom: 16px;
+    bottom: 0px;
     right: 16px;
     font-size: 48px;
     text-align: center;
@@ -220,7 +222,29 @@ p {
     opacity: 1;
     pointer-events: auto;
     cursor: pointer;
+    bottom: 16px;
 }
+
+#footer{
+    position: relative;
+    width: 100%;
+    height: 48px;
+    color:var(--color-grey);
+    box-shadow: 1px 1px 10px;
+}
+
+.copyright{
+    position: absolute;
+    padding-right: 32px;
+    width: 100%;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.copyright p{
+    float: right;
+}
+
 
 @media screen and (max-width: 768px){
     .hamburger{

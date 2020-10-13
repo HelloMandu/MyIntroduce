@@ -28,7 +28,7 @@ const navbarStyling = () => {
 const scrollEvent = () =>{
   const scrolltoLink = (link) =>{
     const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior:"smooth" , block: "center"})
+    scrollTo.scrollIntoView({behavior:"smooth"})
   }
   const navbarMenu = document.querySelector('.navbar__menu');
   const arrowUp = document.querySelector('.arrow-up');
@@ -48,10 +48,5 @@ navbarStyling();
 scrollEvent();
 (function() {
   const homeContainer = document.querySelector('.home__container');
-  if(window.scrollY === 0){
     homeContainer.classList.add('splash');
-  }
-  else{
-    homeContainer.classList.remove('splash');
-  }
 }());
