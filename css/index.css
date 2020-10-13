@@ -68,10 +68,6 @@ p {
     margin: 4px 0;
 }
 
-/* javascript를 이용해 바꿀 것
-    background-color: var(--color--white);
-    box-shadow: 3px 1px 15px;
-*/
 .navbar{
     position: fixed;
     height: 80px;
@@ -80,6 +76,14 @@ p {
     font-size: var(--font-regular);
     background-color: transparent;
     width: 100%;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+
+.navbar-dark{
+    background-color: var(--color-white);
+    opacity: .9;
+    box-shadow: 3px 1px 15px;
 }
 .navbar__container{
     position: relative;
@@ -100,13 +104,13 @@ p {
     list-style: none;
     align-items: center;
     padding-left: 0;
+    transition: all .3s ease-in-out;
 }
 
 .navbar__menu__item{
     padding: 12px 18px;
     border-radius: var(--size-border-radius);
     text-align: center;
-    transition: all .3s ease-in-out;
     cursor: pointer;
 }
 
@@ -173,10 +177,22 @@ p {
     text-align: center;
     width: 100%;
     height: 100vh;
+}
+
+.home__container{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 200px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.splash{
+    top: 150px;
+    opacity: 1;
 }
 
 .home__profile{
@@ -185,26 +201,47 @@ p {
     height: 300px;
 }
 
+
+.arrow-up, .fa-angle-double-up{
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    font-size: 48px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in;
+}
+
+.arrow-on,
+.arrow-on .fa-angle-double-up{
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px){
     .hamburger{
         display: inline-block;
     }
 
     .navbar__menu{
-        display: none;
+        opacity: 0;
+        pointer-events: none;
         position: relative;
         flex-direction: column;
         top: 64px;
     }
-
     .navbar__menu__item{
         padding: 8px;
     }
 
     .on .navbar__menu{
-        display: inline;
+        opacity: 1;
+        pointer-events: auto;
     }
-    
 
 }
 

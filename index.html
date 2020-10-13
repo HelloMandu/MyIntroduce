@@ -17,11 +17,11 @@
         <div class="navbar__container">
             <img class="logo" src="./images/logo-removebg.png" alt="logo image">
             <ul class="navbar__menu">
-                <li class="navbar__menu__item">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">My work</li>
-                <li class="navbar__menu__item">contact</li>
+                <li class="navbar__menu__item" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">My work</li>
+                <li class="navbar__menu__item" data-link="#contact">contact</li>
             </ul>
             <div class="hamburger">
                 <div class="bar1"></div>
@@ -31,9 +31,11 @@
         </div>
     </nav>
     <section id="home">
-        <img src="./images/logo-removebg.png" alt="profile image" class="home__profile">
-        <h1 class="home__title">Sungmin's Portpolio</h1>
-        <h2 class="home__description">내 포트폴리오사이트</h2>
+        <div class="home__container">
+            <img src="./images/logo-removebg.png" alt="profile image" class="home__profile">
+            <h1 class="home__title">Sungmin's Portpolio</h1>
+            <h2 class="home__description">내 포트폴리오사이트</h2>
+        </div>
     </section>
     <section id="about" class="section">
 
@@ -164,6 +166,9 @@
             2020 Sungmin Jo - All rights reserved
         </p>
     </footer>
+    <div class="arrow-up">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
 </body>
 
 </html>
