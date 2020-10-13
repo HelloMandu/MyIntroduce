@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sungmin's Portfolio</title>
     <meta name="keywords" content="portfolio Sungmin Jo 조성민">
-    <meta name="description" content="포트폴리오 - 반갑습니다, 웹 프론트엔드 개발자 조성민입니다">
+    <meta name="description" content="포트폴리오 - 반갑습니다, 프론트엔드 개발자 조성민입니다">
     <meta name="author" content="Sungmin Jo">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sungmin Jo's Portfolio">
-    <meta property="og:description" content="포트폴리오 - 반갑습니다, 웹 프론트엔드 개발자 조성민입니다">
+    <meta property="og:description" content="포트폴리오 - 반갑습니다, 프론트엔드 개발자 조성민입니다">
     <meta property="og:url" content="https://temp.com/">
     <link rel="icon" type="image/png" href="./images/logo.png">
     <script src="https://kit.fontawesome.com/3fb2baf417.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" />
     <script src="./src/index.js" defer></script>
@@ -46,52 +47,84 @@
             <h2 class="home__description">끊임없는 배움을 통한 성장,<br>
                 새로운 기술에 대한 지속적인 관심,<br>
                 새로운 배움에 두려움을 두지 않는 태도<br>
-                저는 신입 프론트엔드 개발자입니다.</h2>
+                저는 프론트엔드 개발자입니다.</h2>
         </div>
     </section>
     <section id="about" class="section">
-
         <h1>About</h1>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum fugit eaque ullam ratione culpa sunt
-            iusto non expedita explicabo cum aperiam provident, accusamus corrupti dolorum eligendi repellendus aliquid,
-            quasi laudantium.
-        </p>
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
+        <div class="about__container">
+            <div class="card">
+                <div class="card__introduce">
+                    <div>
+                        <p class="position">
+                            프론트엔드 개발자
+                        </p>
+                        <p class="name">
+                            조 성 민
+                        <p/>
+                    </div>
+                    <div>
+                        <p class="phone">
+                            <i class="fas fa-mobile-alt"></i>
+                            010-2040-6695
+                        </p>
+                        <p class="email">
+                            <i class="far fa-envelope"></i>
+                            tjdals6695@gmail.com
+                        </p>
+                    </div>
                 </div>
-                <div class="major__title">Frontend</div>
-                <div class="major__description">Frontend Description</div>
+                <div class="profile-image"></div>
             </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <div class="major__title">Frontend</div>
-                <div class="major__description">Frontend Description</div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <div class="major__title">Frontend</div>
-                <div class="major__description">Frontend Description</div>
-            </div>
-        </div>
-        <div class="about__jobs">
-            <div class="job">
-                <p class="job__name">디스이즈</p>
-                <p class="job__period">2018~2020</p>
-            </div>
-            <div class="job">
-                <p class="job__name">디스이즈</p>
-                <p class="job__period">2018~2020</p>
-            </div>
+            <ul class="console-list">
+                <li class="console">
+                    <span>Console</span>
+                </li>
+                <li class="console-item">
+                    <div class="request">
+                        <i class="fas fa-angle-right"></i>
+                        getName();
+                    </div>
+                    <div>
+                        <i class="fas fa-angle-left"></i>
+                        "<span class="response">조성민</span>"
+                    </div>
+                </li>
+                <li class="console-item">
+                    <div class="request">
+                        <i class="fas fa-angle-right"></i>
+                        [birth.<span>year</span>(), birth.<span>month</span>(), birth.<span>day</span>()].join('.');
+                    </div>
+                    <div>
+                        <i class="fas fa-angle-left"></i>
+                        "<span class="response">1996.07.09</span>"
+                    </div>
+                </li>
+                <li class="console-item">
+                    <div class="request">
+                        <i class="fas fa-angle-right"></i>
+                        getUniversity();</div>
+                    <div>
+                        <i class="fas fa-angle-left"></i>
+                        "<span class="response">동아대학교</span>"
+                    </div>
+                </li>
+                <li class="console-item">
+                    <div class="request">
+                        <i class="fas fa-angle-right"></i>
+                        getCompany();</div>
+                    <div>
+                        <i class="fas fa-angle-left"></i>
+                        <span class="response undefined">undefined</span>
+                    </div>
+                </li>
+                <li class="console-item">
+                    <div><span class="underbar">__</span></div>
+                </li>
+            </ul>
         </div>
     </section>
-    <section id="skills" class="section">
+    <!-- <section id="skills" class="section">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
@@ -175,7 +208,7 @@
             <a href="#" target="_blank"></a>
         </div>
 
-    </section>
+    </section> -->
     <footer id="footer">
         <div class="copyright">
             <p>© Sungmin Jo 2020, All rights reserved.</p>
