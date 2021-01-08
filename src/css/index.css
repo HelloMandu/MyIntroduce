@@ -1,0 +1,125 @@
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #fe918d;
+    --color-dark-pink: #ff6863;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #fff7d1;
+    --color-orange: #feb546;
+    --color-black: #000000;
+
+    --font-12px: 1rem;
+    --font-14px: 1.167rem;
+    --font-16px: 1.333rem;
+    --font-18px: 1.5rem;
+    --font-20px: 1.667rem;
+    --font-22px: 1.833rem;
+    --font-24px: 2rem;
+    --font-26px: 2.167rem;
+    --font-28px: 2.333rem;
+    --font-30px: 2.5rem;
+    --font-32px: 2.667rem;
+    --font-34px: 2.833rem;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", 나눔고딕,
+        "NanumGothic", "맑은 고딕", "Malgun Gothic", Ngothic, sans-serif;
+    font-size: var(--font-12px);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 30px;
+}
+
+
+.arrow-up,
+.fa-angle-double-up {
+    position: fixed;
+    bottom: 0px;
+    right: 16px;
+    font-size: 48px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in;
+}
+
+.arrow-on,
+.fa-angle-double-up {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+    bottom: 16px;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    color: var(--color-grey);
+    box-shadow: 1px 1px 3px;
+}
+
+.copyright {
+    position: absolute;
+    padding-right: 32px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.copyright p {
+    float: right;
+}
+
+@media screen and (max-width: 1080px) {
+    .hamburger {
+        display: inline-block;
+    }
+
+    .navbar__menu {
+        opacity: 0;
+        pointer-events: none;
+        position: relative;
+        flex-direction: column;
+        top: 80px;
+    }
+    .navbar__menu__item {
+        padding: 8px;
+    }
+
+    .on .navbar__menu {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .about__container {
+        flex-direction: column;
+    }
+}

@@ -13,65 +13,59 @@
     <meta property="og:description" content="포트폴리오 - 반갑습니다, 프론트엔드 개발자 조성민입니다">
     <meta property="og:url" content="https://temp.com/">
     <link rel="icon" type="image/png" href="./images/logo.png">
-    <script src="https://kit.fontawesome.com/3fb2baf417.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" />
-    <script src="./src/index.js" defer></script>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <script src="./about.js" defer></script>
+    <script src="./scroll.js" defer></script>
+    <script src="./home.js" defer></script>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar__container">
+    <header class="navbar">
             <img class="logo" src="./images/logo-removebg.png" alt="logo image">
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item" data-link="#home">Home</li>
-                <li class="navbar__menu__item" data-link="#about">About</li>
-                <li class="navbar__menu__item" data-link="#skills">Skills</li>
-                <li class="navbar__menu__item" data-link="#work">My work</li>
-                <li class="navbar__menu__item" data-link="#contact">contact</li>
-            </ul>
-            <div class="hamburger">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </div>
-    </nav>
+            <nav>
+                <ul class="navbar-menu">
+                    <li class="navbar-menu-item" data-link="#home">Home</li>
+                    <li class="navbar-menu-item" data-link="#about">About</li>
+                    <li class="navbar-menu-item" data-link="#skills">Skills</li>
+                    <li class="navbar-menu-item" data-link="#work">My work</li>
+                    <li class="navbar-menu-item" data-link="#contact">contact</li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </nav>
+    </header>
     <section id="home">
-        <div class="home__container">
-            <img src="./images/logo-removebg.png" alt="profile image" class="home__profile">
-            <h1 class="home__title">Hi,<br>
+        <div class="home-container">
+            <img class="home-profile" src="./images/logo-removebg.png" alt="profile image" >
+            <h1 class="home-title">
+                Hi,<br>
                 I'm Web Developer.</h1>
-            <h2 class="home__description">끊임없는 배움을 통한 성장,<br>
+            <h2>
+                끊임없는 배움을 통한 성장,<br>
                 새로운 기술에 대한 지속적인 관심,<br>
                 새로운 배움에 두려움을 두지 않는 태도<br>
                 저는 프론트엔드 개발자입니다.</h2>
         </div>
     </section>
-    <section id="about" class="section">
+    <section id="about">
         <h1>About</h1>
-        <div class="about__container">
+        <div class="about-container">
             <div class="card">
-                <div class="card__introduce">
+                <div class="card-introduce">
                     <div>
-                        <p class="position">
-                            프론트엔드 개발자
-                        </p>
-                        <p class="name">
-                            조 성 민
-                        <p/>
+                        <p>프론트엔드 개발자</p>
+                        <p class="name">조성민<p/>
                     </div>
                     <div>
-                        <p class="phone">
-                            <i class="fas fa-mobile-alt"></i>
-                            010-2040-6695
-                        </p>
-                        <p class="email">
-                            <i class="far fa-envelope"></i>
-                            tjdals6695@gmail.com
-                        </p>
+                        <p>010-2040-6695</p>
+                        <p>tjdals6695@gmail.com</p>
+                        <p>https://github.com/HelloMandu</p>
                     </div>
                 </div>
                 <div class="profile-image"></div>
@@ -82,44 +76,36 @@
                 </li>
                 <li class="console-item">
                     <div class="request">
-                        <i class="fas fa-angle-right"></i>
                         getName();
                     </div>
                     <div>
-                        <i class="fas fa-angle-left"></i>
                         "<span class="response">조성민</span>"
                     </div>
                 </li>
                 <li class="console-item">
                     <div class="request">
-                        <i class="fas fa-angle-right"></i>
                         [birth.<span>year</span>(), birth.<span>month</span>(), birth.<span>day</span>()].join('.');
                     </div>
                     <div>
-                        <i class="fas fa-angle-left"></i>
                         "<span class="response">1996.07.09</span>"
                     </div>
                 </li>
                 <li class="console-item">
                     <div class="request">
-                        <i class="fas fa-angle-right"></i>
                         getUniversity();</div>
                     <div>
-                        <i class="fas fa-angle-left"></i>
                         "<span class="response">동아대학교</span>"
                     </div>
                 </li>
                 <li class="console-item">
                     <div class="request">
-                        <i class="fas fa-angle-right"></i>
                         getCompany();</div>
                     <div>
-                        <i class="fas fa-angle-left"></i>
                         <span class="response undefined">undefined</span>
                     </div>
                 </li>
                 <li class="console-item">
-                    <div><span class="underbar">__</span></div>
+                    <div><span class='underbar'>__</span></div>
                 </li>
             </ul>
         </div>
@@ -209,14 +195,14 @@
         </div>
 
     </section> -->
-    <footer id="footer">
+    <!-- <footer id="footer">
         <div class="copyright">
             <p>© Sungmin Jo 2020, All rights reserved.</p>
         </div>
     </footer>
     <div class="arrow-up">
         <i class="fas fa-angle-double-up"></i>
-    </div>
+    </div> -->
 </body>
 
 </html>

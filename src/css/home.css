@@ -1,0 +1,34 @@
+#home {
+    background: url("../images/background_keyboard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    color: var(--color-light-white);
+}
+
+.splash {
+    padding-top: 50px;
+    opacity: 1;
+}
+
+.home-title {
+    font-family: "Sansita Swashed", cursive;
+}
+
+.home-profile {
+    min-width: 240px;
+    height: 300px;
+}
