@@ -3,8 +3,8 @@
 const underbarInterval = () => {
     const underbar = document.querySelector(".underbar");
     setInterval(() => {
-        underbar.style.display =
-            underbar.style.display === "none" ? "block" : "none";
+        const opacity = underbar.style.opacity;
+        underbar.style.opacity = opacity === '0' ? '1' : '0';
     }, 500);
 };
 

@@ -28,8 +28,9 @@ const scrollEvent = () => {
     const scrolltoLink = (link) => {
         const scrollTo = document.getElementById(link);
         scrollTo.scrollIntoView({ behavior: "smooth" });
+        // scrollTo.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
     };
-    const navbarMenu = document.querySelector(".navbar-menu-item");
+    const navbarMenu = document.querySelector(".navbar-menu");
     // const arrowUp = document.querySelector(".arrow-up");
     navbarMenu.addEventListener("click", (e) => {
         const link = e.target.dataset.link;

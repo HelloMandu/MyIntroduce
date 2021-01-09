@@ -24,25 +24,25 @@
 
 <body>
     <header class="navbar">
-            <img class="logo" src="./images/logo-removebg.png" alt="logo image">
-            <nav>
-                <ul class="navbar-menu">
-                    <li class="navbar-menu-item" data-link="#home">Home</li>
-                    <li class="navbar-menu-item" data-link="#about">About</li>
-                    <li class="navbar-menu-item" data-link="#skills">Skills</li>
-                    <li class="navbar-menu-item" data-link="#work">My work</li>
-                    <li class="navbar-menu-item" data-link="#contact">contact</li>
-                </ul>
-                <div class="hamburger">
-                    <div class="bar bar1"></div>
-                    <div class="bar bar2"></div>
-                    <div class="bar bar3"></div>
-                </div>
-            </nav>
+        <img class="logo" src="./images/logo-removebg.png" alt="logo image">
+        <nav class='nav-container'>
+            <ul class="navbar-menu">
+                <li class="navbar-menu-item" data-link="home">Home</li>
+                <li class="navbar-menu-item" data-link="about">About</li>
+                <li class="navbar-menu-item" data-link="skills">Skills</li>
+                <li class="navbar-menu-item" data-link="work">My work</li>
+                <li class="navbar-menu-item" data-link="contact">contact</li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </nav>
     </header>
     <section id="home">
         <div class="home-container">
-            <img class="home-profile" src="./images/logo-removebg.png" alt="profile image" >
+            <img class="home-profile" src="./images/logo-removebg.png" alt="profile image">
             <h1 class="home-title">
                 Hi,<br>
                 I'm Web Developer.</h1>
@@ -59,13 +59,13 @@
             <div class="card">
                 <div class="card-introduce">
                     <div>
-                        <p>프론트엔드 개발자</p>
+                        <p class="job">프론트엔드 개발자</p>
                         <p class="name">조성민<p/>
                     </div>
                     <div>
                         <p>010-2040-6695</p>
                         <p>tjdals6695@gmail.com</p>
-                        <p>https://github.com/HelloMandu</p>
+                        <p><a href="https://github.com/HelloMandu" target='_blank'>https://github.com/HelloMandu</a></p>
                     </div>
                 </div>
                 <div class="profile-image"></div>
@@ -75,37 +75,39 @@
                     <span>Console</span>
                 </li>
                 <li class="console-item">
-                    <div class="request">
-                        getName();
-                    </div>
-                    <div>
-                        "<span class="response">조성민</span>"
-                    </div>
+                    <span class="declare">const</span> sungmin = <span class="declare">new</span> Developer();
+                </li>
+                <li class="console-item response undefined">
+                    undefined
                 </li>
                 <li class="console-item">
-                    <div class="request">
-                        [birth.<span>year</span>(), birth.<span>month</span>(), birth.<span>day</span>()].join('.');
-                    </div>
-                    <div>
-                        "<span class="response">1996.07.09</span>"
-                    </div>
+                    sungmin.<span class="method">getName</span>();
+                </li>
+                <li class="console-item response">
+                    "조성민"
                 </li>
                 <li class="console-item">
-                    <div class="request">
-                        getUniversity();</div>
-                    <div>
-                        "<span class="response">동아대학교</span>"
-                    </div>
+                    sungmin.<span class="method">getDate</span>();
+                </li>
+                <li class="console-item response">
+                    "1996.07.09"
                 </li>
                 <li class="console-item">
-                    <div class="request">
-                        getCompany();</div>
-                    <div>
-                        <span class="response undefined">undefined</span>
-                    </div>
+                    sungmin.<span class="method">getUniversity</span>();
+                </li>
+                <li class="console-item response">
+                    "동아대학교"
                 </li>
                 <li class="console-item">
-                    <div><span class='underbar'>__</span></div>
+                    sungmin.<span class="method">getCompany</span>();
+                </li>
+                <li class="console-item response undefined">
+                    undefined
+                </li>
+                <li class="console-item ">
+                    <span class="underbar">
+                        __
+                    </span>
                 </li>
             </ul>
         </div>

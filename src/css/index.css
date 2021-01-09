@@ -13,6 +13,8 @@
     --color-orange: #feb546;
     --color-black: #000000;
 
+    --font-8px: 0.6667rem;
+    --font-10px: 0.8333rem;
     --font-12px: 1rem;
     --font-14px: 1.167rem;
     --font-16px: 1.333rem;
@@ -43,6 +45,10 @@
     font-size: var(--font-12px);
 }
 
+h1{
+    font-size: var(--font-28px);
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -53,7 +59,7 @@ ul {
 }
 
 section {
-    padding: 30px;
+    padding: 8px 18px;
 }
 
 
