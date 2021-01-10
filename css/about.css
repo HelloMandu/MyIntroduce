@@ -11,7 +11,7 @@
     justify-content: space-between;
     height: 18rem;
     border: 1px solid black;
-    padding: 14px 18px;
+    padding: 12px 14px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px gray;
     color: gray;
@@ -42,7 +42,18 @@
     width: 180px;
     height: 100%;
     border-radius: 5px;
-    margin-left: 18px;
+}
+
+.fa-mobile{
+    font-size: 28px;
+    margin-right: 4px;
+}
+.fa-envelope{
+    margin-right: 4px;
+}
+.fa-github{
+    font-size: 18px;
+    margin-right: 4px;
 }
 
 .console-list {
@@ -92,6 +103,16 @@
     line-height: 32px;
 }
 
+.cli{
+    margin-left: 8px;
+}
+
+.fa-angle-right{
+    color: #0084ff;
+}
+.fa-angle-left{
+    color: #fff;
+}
 
 
 @media screen and (max-width: 1024px) {

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 65px;
     top: 0;
     font-weight: bold;
     font-size: var(--font-24px);
@@ -13,14 +13,14 @@
     padding: 0 28px;
 }
 
-.navbar-dark{
+.navbar.active{
     background-color: var(--color-white);
     opacity: 1;
     box-shadow: 3px 1px 15px;
 }
 
 .logo{
-    width: 80px;
+    width: 65px;
     height: 100%;
 }
 
@@ -40,14 +40,17 @@
     padding: 8px 12px;
     cursor: pointer;
     white-space: nowrap;
+    transition: color .15s ease-in-out;
+    color: #222;
+    border-radius: 8px;
 }
 
-.navbar-menu-item:active{
-    color: var(--color-blue);
+.navbar-menu-item.active{
+    color: rgb(67, 166, 231);
 }
 
 .navbar-menu-item:hover{
-    color: var(--color-blue);
+    color: rgb(67, 166, 231);
 }
 
 .hamburger{
