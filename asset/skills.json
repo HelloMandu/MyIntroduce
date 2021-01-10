@@ -1,0 +1,77 @@
+{
+    "skills": [
+        {
+            "title": "HTML",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": "orangered",
+            "percent": 90
+        },
+        {
+            "title": "CSS",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": "rgb(0, 162, 255)",
+            "percent": 70
+        },
+        {
+            "title": "SCSS",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": " rgb(235, 116, 185)",
+            "percent": 70
+        },
+        {
+            "title": "JavaScript",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": "darkorange",
+            "percent": 90
+        },
+        {
+            "title": "TypeScript",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": " rgb(0, 132, 255)",
+            "percent": 40
+        },
+
+        {
+            "title": "React.js",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": " rgb(0, 195, 255)",
+            "percent": 80
+        },
+        {
+            "title": "Redux",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": "rgb(214, 113, 240)",
+            "percent": 60
+        },
+        {
+            "title": "Express.js",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": " rgb(4, 179, 106)",
+            "percent": 60
+        },
+        {
+            "title": "C, C++",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": "rgb(13, 158, 255)",
+            "percent": 60
+        },
+        {
+            "title": "MySQL",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": "rgb(4, 169, 180)",
+            "percent": 60
+        },
+        {
+            "title": "MongoDB",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": "rgb(4, 133, 68)",
+            "percent": 40
+        },
+        {
+            "title": "Git, Github",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo dolores cupiditate! Alias culpa nobis quis tenetur, iusto aliquam doloremque laudantium quam recusandae, dolorem voluptate fugit omnis excepturi accusamus eveniet.",
+            "color": "#444",
+            "percent": 40
+        }
+    ]
+}

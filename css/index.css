@@ -78,7 +78,7 @@ section {
     height: 48px;
     opacity: 0;
     pointer-events: none;
-    box-shadow: 3px 1px 15px;
+    box-shadow: 1px 1px 5px;
     background-color: #fff;
     transition: all 0.3s ease-in;
     border-radius: 50%;

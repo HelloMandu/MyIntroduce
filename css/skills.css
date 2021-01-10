@@ -20,121 +20,12 @@
     height: 100%;
     border-radius: 8px;
 }
-.progress-bar::after{
+.progress-percent{
     position: absolute;
     transform: translateY(-100%);
     font-weight: bold;
     right: 0;
 }
-
-.html{
-    width: 90%;
-    background-color: orangered;
-}
-.html::after{
-    content: "90%";
-    color: orangered;
-}
-
-.css{
-    width: 70%;
-    background-color: rgb(0, 162, 255);
-}
-.css::after{
-    content: "70%";
-    color: rgb(0, 162, 255);
-}
-
-.scss{
-    width: 70%;
-    background-color: rgb(235, 116, 185);
-}
-.scss::after{
-    content: "70%";
-    color: rgb(235, 116, 185);
-}
-
-.js{
-    width: 90%;
-    background-color: darkorange;
-}
-.js::after{
-    content: "90%";
-    color: darkorange;
-}
-
-.ts{
-    width: 40%;
-    background-color: rgb(0, 132, 255);
-}
-.ts::after{
-    content: "40%";
-    color:rgb(0, 132, 255);
-}
-
-.react{
-    width: 80%;
-    background-color: rgb(0, 195, 255);
-}
-.react::after{
-    content: "80%";
-    color: rgb(0, 195, 255);
-}
-
-.redux{
-    width: 60%;
-    background-color: rgb(214, 113, 240);
-}
-.redux::after{
-    content: "60%";
-    color:rgb(214, 113, 240);
-}
-
-.express{
-    width: 60%;
-    background-color: rgb(4, 179, 106);
-}
-.express::after{
-    content: "60%";
-    color: rgb(4, 179, 106);
-}
-
-.c{
-    width: 60%;
-    background-color: rgb(13, 158, 255);
-}
-.c::after{
-    content: "60%";
-    color:rgb(13, 158, 255);
-}
-
-.mysql{
-    width: 60%;
-    background-color: rgb(4, 169, 180);
-}
-.mysql::after{
-    content: "60%";
-    color: rgb(4, 169, 180);
-}
-
-.mongo{
-    width: 40%;
-    background-color: rgb(4, 133, 68);
-}
-.mongo::after{
-    content: "40%";
-    color:rgb(4, 133, 68);
-}
-
-.git{
-    width: 40%;
-    background-color: #444;
-}
-.git::after{
-    content: "40%";
-    color:#444;
-}
-
 
 @media screen and (max-width: 1024px){
     .skill-container{

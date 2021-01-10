@@ -18,7 +18,7 @@ const activeNavItem = (selected) => {
     selectedNavItem.classList.add("active");
 };
 
-const callback = (entries, observer) => {
+const callback = (entries) => {
     entries.forEach((entry) => {
         const { isIntersecting, intersectionRatio, boundingClientRect } = entry;
         if (!isIntersecting && intersectionRatio > 0) {
