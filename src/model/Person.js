@@ -4,8 +4,8 @@ class Person {
         this.phone=phone;
         this.email=email;
         this.github=github;
-        this.birth=github;
-        this.university=github;
+        this.birth=birth;
+        this.university=university;
     }
     get get() {
         const name = this.name;
