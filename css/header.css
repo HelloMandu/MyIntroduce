@@ -1,4 +1,4 @@
-.navbar{
+#header{
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -13,10 +13,10 @@
     padding: 0 28px;
 }
 
-.navbar.active{
+.active{
     background-color: var(--color-white);
     opacity: 1;
-    box-shadow: 3px 1px 15px;
+    box-shadow: 1px 1px 5px;
 }
 
 .logo{

@@ -24,7 +24,8 @@ const callback = (entries) => {
         if (!isIntersecting && intersectionRatio > 0) {
             const { id } = entry.target;
             const index = sectionIdList.indexOf(id);
-            const selectedNavIndex = boundingClientRect.y < 0 ? index + 1 : index - 1;
+            const selectedNavIndex =
+                boundingClientRect.y < 0 ? index + 1 : index - 1;
             activeNavItem(navList[selectedNavIndex]);
         }
     });
@@ -35,7 +36,15 @@ const observer = new IntersectionObserver(callback, options);
 sectionList.forEach((section) => observer.observe(section));
 
 window.addEventListener("scroll", () => {
-    if(window.scrollY === 0){
+    if (window.scrollY === 0) {
         selectedNavItem.classList.remove("active");
+    } else if (
+        Math.abs(
+            window.innerHeight +
+                document.documentElement.scrollTop -
+                document.documentElement.scrollHeight
+        ) < 10
+    ) {
+        activeNavItem(navList[navList.length - 1]);
     }
 });

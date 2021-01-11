@@ -2,7 +2,7 @@
 
 const onToggleHamberger = () => {
     const hamberger = document.querySelector(".hamburger");
-    const navbar = document.querySelector(".navbar");
+    const navbar = document.getElementById("header");
     hamberger.addEventListener("click", () => {
         hamberger.classList.toggle("on");
         navbar.classList.toggle("on");
@@ -10,7 +10,7 @@ const onToggleHamberger = () => {
 };
 
 const navbarStyling = () => {
-    const navbar = document.querySelector(".navbar");
+    const navbar = document.getElementById("header");
     const arrowUp = document.querySelector(".arrow-up");
     const navbarHeight = navbar.getBoundingClientRect().height;
     document.addEventListener("scroll", () => {

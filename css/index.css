@@ -52,6 +52,14 @@
 
 h1{
     font-size: var(--font-28px);
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+h2{
+    font-size: var(--font-18px);
+    text-align: center;
 }
 
 a {
@@ -65,6 +73,11 @@ ul {
 
 section {
     padding: 8px 18px;
+    padding-top: 60px;
+}
+
+.home{
+    padding-top: 0px;
 }
 
 .arrow-up{
