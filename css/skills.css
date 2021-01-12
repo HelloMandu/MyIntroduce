@@ -29,6 +29,7 @@
     transform: translateY(-100%);
     font-weight: bold;
     right: 0;
+    opacity: 0;
 }
 
 @media screen and (max-width: 1024px){

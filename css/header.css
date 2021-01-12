@@ -40,7 +40,7 @@
     padding: 8px 12px;
     cursor: pointer;
     white-space: nowrap;
-    transition: color .15s ease-in-out;
+    transition: all .15s ease-in-out;
     color: #222;
     border-radius: 8px;
 }

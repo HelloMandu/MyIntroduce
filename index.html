@@ -20,8 +20,10 @@
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/skills.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
     <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
 </head>
 
 <body>
@@ -32,7 +34,7 @@
                 <li class="navbar-menu-item" data-link="home">Home</li>
                 <li class="navbar-menu-item" data-link="about">About</li>
                 <li class="navbar-menu-item" data-link="skills">Skills</li>
-                <li class="navbar-menu-item" data-link="work">My work</li>
+                <li class="navbar-menu-item" data-link="projects">Projects</li>
                 <li class="navbar-menu-item" data-link="contact">Contact</li>
             </ul>
             <div class="hamburger">
@@ -66,8 +68,8 @@
             <div class="card">
                 <div class="card-introduce">
                     <div class="card-title">
-                        <p class="job"/>
-                        <p class="name"/>
+                        <p class="job" />
+                        <p class="name" />
                     </div>
                     <div>
                         <p class="card-phone"><i class="fa fa-mobile"></i></p>
@@ -135,37 +137,61 @@
         <div class="skill-container">
         </div>
     </section>
-    <!-- <section id="work">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories">
-            <buton class="category__btn">
-                All
-                <span class="category__count"></span>
-            </buton>
-            <buton class="category__btn">
-                FrontEnd
-                <span class="category__count"></span>
-            </buton>
-            <buton class="category__btn">
-                Backend
-                <span class="category__count"></span>
-            </buton>
-            <buton class="category__btn">
-                Mobile
-                <span class="category__count"></span>
-            </buton>
-        </div>
-        <div class="work__prodjects">
-            <a href="#" target="blank" class="project__img">
-                <img src="" alt="">
-                <div class="project__description">
-                    <h3>Thisis</h3>
-                    <span>Clone coking with HTML and CSS</span>
+    <section id="projects">
+        <h1>Projects</h1>
+        <ul class="project-list">
+            <!-- <li class="project">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h2>Thisis</h2>
+                        <p>동아대학교 애플리케이션</p>
+                    </div>
+                    <button class="project-more">MORE</button>
                 </div>
-            </a>
-        </div>
-    </section> -->
+            </li>
+            <li class="project">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h2>Thisis</h2>
+                        <p>동아대학교 애플리케이션</p>
+                    </div>
+                    <button class="project-more">MORE</button>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h2>Thisis</h2>
+                        <p>동아대학교 애플리케이션</p>
+                    </div>
+                    <button class="project-more">MORE</button>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h2>Thisis</h2>
+                        <p>동아대학교 애플리케이션</p>
+                    </div>
+                    <button class="project-more">MORE</button>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h2>Thisis</h2>
+                        <p>동아대학교 애플리케이션</p>
+                    </div>
+                    <button class="project-more">MORE</button>
+                </div>
+            </li> -->
+        </ul>
+    </section>
     <section id="contact">
         <h1>Contact</h1>
         <div class="contact-container">
@@ -175,7 +201,7 @@
                 <textarea type="text" name="message" placeholder="내용"></textarea>
                 <button type="submit" name="submit">SEND MESSAGE</button>
             </form>
-            <div class='github-link-wrapper' >
+            <div class='github-link-wrapper'>
                 <a class='github-link'>
                     <i class="fa fa-github"></i>
                 </a>
@@ -188,6 +214,25 @@
             © Sungmin Jo 2020, All rights reserved.
         </p>
     </footer>
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-image-wrapper">
+                <img class="modal-image" src="./images/profile.jpg" alt="">
+            </div>
+            <div class="modal-info">
+                <div class="modal-title-wrapper">
+                    <h2 class="modal-title">Thisis</h2>
+                    <h3 class="modal-subtitle">동아대학교 애플리케이션</h3>
+                </div>
+                <p class="modal-description">
+                    kakaomap을 이용하여 부산광역시 내의 cctv, 학교, 주차장 위치를 마커로 표시하였습니다.
+                    Koa.js를 이용해 api 서버를 만들어 주변 2KM이내 정보만 표시하였습니다
+                    Redux, Redux-Saga를 사용하여 위치정보를 요청하고 정리하였습니다.
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="arrow-up">
         <i class="fa fa-angle-double-up"></i>
     </div>
@@ -196,6 +241,7 @@
 
     <script type="module" src="./src/skills.js"></script>
     <script type="module" src="./src/me.js"></script>
+    <script type="module" src="./src/projects.js"></script>
 
     <script src="./src/about.js"></script>
     <script src="./src/scroll.js"></script>

@@ -4,7 +4,7 @@ const skills = [
     {
         title: "HTML",
         content:
-            "검색엔진최적화(SEO)를 이해하고 웹 표준 바탕의 꼼꼼한 시멘틱 마크업을 작성합니다. DOM의 대한 이해를 바탕으로 HTML문서를 구조화하여 DOM에 접근할 수 있도록 합니다.",
+            "검색엔진최적화(SEO)와 DOM의 대한 이해를 바탕으로 꼼꼼한 시멘틱 마크업을 작성합니다. HTML문서를 구조화하여 DOM에 접근할 수 있도록 합니다.",
         color: "orangered",
         percent: 90,
     },
@@ -18,14 +18,14 @@ const skills = [
     {
         title: "SCSS",
         content:
-            "CSS 전처리기(CSS Preprocessor)를 이용해 기존 CSS 좀 더 세련되게 작성해 생산성을 높일 수 있습니다. 변수, 함수를 사용하여 재사용성을 높이고 CSS Module을 통해 중첩클래스를 방지할 수 있습니다. ",
+            "CSS 전처리기(CSS Preprocessor)를 이용해 기존 CSS 좀 더 세련되게 작성하여 생산성을 높일 수 있습니다. 변수, 함수를 사용하여 재사용성을 높이고 CSS Module을 통해 중첩클래스를 방지할 수 있습니다. ",
         color: " rgb(235, 116, 185)",
         percent: 70,
     },
     {
         title: "JavaScript",
         content:
-            "ES6기반의 모던 자바스크립트 문법을 사용합니다. 클로저, 호이스팅, 이벤트등 자바스크립트의 기본 개념을 숙지하고 있으며, Promise, async/await을 이해하고 백엔드와 통신해 웹페이지를 동적으로 제어할 수 있습니다.",
+            "클로저, 호이스팅, 이벤트등 자바스크립트의 기본 개념을 숙지하고 있으며 ES6기반의 모던 자바스크립트 문법을 사용합니다., Promise, async/await을 이해하고 백엔드와 통신해 웹페이지를 동적으로 제어할 수 있습니다.",
         color: "darkorange",
         percent: 90,
     },
@@ -61,7 +61,7 @@ const skills = [
     {
         title: "C, C++",
         content:
-            "C와 C++을 접하면서 프로그래밍의 기반을 다졌습니다. 프로그래밍 문법과 시간, 공간복잡도 분석 등의 기초지식을 공부하면서 배경지식을 넓혀나갔습니다. 특히 C++을 사용하여 온라인 저지 사이트의 다양한 문제들을 풀어가면서 당면한 문제에 맞게 자료구조와 알고리즘을 지식을 적용하여 문제 해결 능력을 키울 수 있었습니다.",
+            "C와 C++으로프로그래밍의 기반을 다졌습니다. 프로그래밍 문법과 시간, 공간복잡도 분석 등의 기본지식을 충분히 이해하였으며 당면한 문제에 맞게 자료구조와 알고리즘을 지식을 적용하여 문제 해결 능력을 갖추었습니다.",
         color: "rgb(13, 158, 255)",
         percent: 80,
     },
@@ -95,6 +95,7 @@ const progressAnimation = () => {
         const posFromTop = progressBar.getBoundingClientRect().top;
         if (window.innerHeight > posFromTop) {
             progressBar.style.width = percentList[index];
+            progressBar.children[0].style.opacity = 1;
         }
     });
 };

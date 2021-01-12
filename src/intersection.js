@@ -1,4 +1,4 @@
-const sectionIdList = ["home", "about", "skills", /*"work",*/ "contact"];
+const sectionIdList = ["home", "about", "skills", "projects", "contact"];
 const sectionList = sectionIdList.map((id) => document.getElementById(id));
 const navList = sectionIdList.map((id) =>
     document.querySelector(`[data-link="${id}"]`)
