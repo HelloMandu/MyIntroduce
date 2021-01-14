@@ -6,8 +6,11 @@ class Modal {
         this.$title = document.querySelector('.modal-title');
         this.$subtitle = document.querySelector('.modal-subtitle');
         this.$description = document.querySelector('.modal-description');
-        this.$modal.addEventListener('blur', this.#offModal);
+        this.$modalClose = document.querySelector('.modal-close');
         this.openModal.bind(this);
+        this.#offModal.bind(this);
+        this.$overlay.addEventListener('click', () => this.#offModal());
+        this.$modalClose.addEventListener('click', () => this.#offModal());
     }
     #imageFormat(image){
         return `./images/${image}`
@@ -20,10 +23,11 @@ class Modal {
         return imageElement;
     }
     #offModal(){
+        this.$modal.classList.remove('on');
         this.$title.innerHTML = '';
         this.$subtitle.innerHTML = '';
         this.$description.innerHTML = '';
-        this.$modal.classList.remove('on');
+        this.$imageWrapper.innerHTML = ''
     }
     openModal(images, title, subTitle, description){
         this.$title.innerHTML = title;
@@ -37,3 +41,5 @@ class Modal {
         this.$modal.classList.add('on');
     }
 }
+
+export default Modal;

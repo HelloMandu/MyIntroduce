@@ -25,7 +25,8 @@
     height: 600px;
     z-index: 150;
     transition: transform .3s ease-in-out;
-    transform: scale(0.5);
+    transform: scale(0);
+    padding-bottom: 48px;
 }
 
 .modal-image-wrapper{
@@ -58,6 +59,15 @@
 }
 .modal-subtitle{
     color: var(--color-grey);
+}
+
+.modal-close{
+    position: absolute;
+    color: var(--color-dark-grey);
+    font-size: var(--font-24px);
+    cursor: pointer;
+    bottom: 8px;
+    right: 8px;
 }
 
 .on{

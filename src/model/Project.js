@@ -1,10 +1,13 @@
+import Modal from './Modal.js';
+
 class Project {
     constructor(title, subTitle, images, techList, description) {
         this.title = title;
-        this.subTitle = subTitle;
+        this.subtitle = subTitle;
         this.images = images;
         this.techList = techList;
         this.description = description;
+        this.modal = new Modal();
         this.$element = this.#createProject();
     }
 
@@ -26,10 +29,18 @@ class Project {
         return buttonElement;
     }
 
+    #getTechElement(){
+        const techElement = document.createElement('span');
+        techElement.classList.add('project-tech');
+        techElement.appendChild(document.createTextNode(this.techList.join('/')))
+        return techElement;
+    }
+
     #getButtonElement() {
         const buttonElement = document.createElement("button");
         buttonElement.classList.add("project-more");
         buttonElement.appendChild(document.createTextNode("MORE"));
+        buttonElement.addEventListener('click', () => this.modal.openModal(this.images, this.title, this.subtitle, this.description))
         return buttonElement;
     }
 
@@ -38,10 +49,11 @@ class Project {
         const titleElement = document.createElement("h2");
         const subTitleElement = document.createElement("p");
         titleElement.appendChild(document.createTextNode(this.title));
-        subTitleElement.appendChild(document.createTextNode(this.subTitle));
+        subTitleElement.appendChild(document.createTextNode(this.subtitle));
         titleElement.appendChild(subTitleElement);
         titleElement.classList.add("project-title");
         contentElement.appendChild(titleElement);
+        contentElement.appendChild(this.#getTechElement());
         contentElement.appendChild(this.#getButtonElement());
         contentElement.classList.add("project-content");
         return contentElement;

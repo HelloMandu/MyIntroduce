@@ -36,6 +36,18 @@
     transition: all .3s ease-in-out;
 }
 
+.project-title h2{
+    margin-bottom: 4px;
+}
+
+.project-tech{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .project-more{
     position: absolute;
     bottom: 0;
@@ -51,11 +63,11 @@
 }
 
 .project:hover .project-title{
-    top: 80px
+    top: 75px
 }
 
 .project:hover .project-more{
-    bottom: 100px
+    bottom: 80px
 }
 
 .project-more:hover{
