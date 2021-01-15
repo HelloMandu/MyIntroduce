@@ -1,3 +1,5 @@
+@import '../../static/stylesheets/mixin';
+
 .console-list {
     align-items: center;
     width: 500px;
@@ -6,85 +8,52 @@
     background-color: #333333;
     color: #edeff0;
     margin: 10px;
-}
-
-.console {
-    height: 25px;
-    color: white;
-    border-bottom: 1px solid gray;
-}
-
-.console span {
-    display: inline-block;
-    text-align: center;
-    width: 80px;
-    height: 100%;
-    background-color: black;
-}
-
-.method {
-    color: #eed91e;
-}
-
-.response {
-    color: #0084ff;
-}
-
-.undefined {
-    color: gray;
-}
-
-.declare{
-    color: blueviolet;
-}
-
-.console-item {
-    white-space: nowrap;
-    padding: 0px 10px;
-    border-top: 1px solid gray;
-    line-height: 32px;
-}
-
-.cli{
-    margin-left: 8px;
-}
-
-.fa-angle-right{
-    color: #0084ff;
-}
-.fa-angle-left{
-    color: #fff;
-}
-
-
-@media screen and (max-width: 1024px) {
-    .about-container {
-        flex-direction: column;
+    .console {
+        height: 25px;
+        color: white;
+        border-bottom: 1px solid gray;
+        span {
+            display: inline-block;
+            text-align: center;
+            width: 80px;
+            height: 100%;
+            background-color: black;
+        }
     }
-}
+    .console-item {
+        white-space: nowrap;
+        padding: 0px 10px;
+        border-top: 1px solid gray;
+        line-height: 32px;
+        .method {
+            color: #eed91e;
+        }
 
-@media screen and (max-width: 768px) {
-    .card{
-        width: 100%;
-        height: auto;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .job{
-        text-align: center;
-    }
-    .name{
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    .profile-image {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-    }
+        .info {
+            color: #0084ff;
+        }
 
-    .console-list{
+        .declare {
+            color: blueviolet;
+        }
+
+        .cli {
+            margin-left: 8px;
+        }
+        .underbar.hidden{
+            display: none;
+        }
+    }
+    .undefined {
+        color: gray;
+    }
+    .fa-angle-right {
+        color: #0084ff;
+    }
+    .fa-angle-left {
+        color: #fff;
+    }
+    @include mobile {
         width: 100%;
     }
 }

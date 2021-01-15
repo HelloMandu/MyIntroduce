@@ -1,39 +1,12 @@
+@import '../../static/stylesheets/mixin';
+
 .about-wrapper {
     display: flex;
     max-width: 1280px;
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
-}
-
-@media screen and (max-width: 1024px) {
-    .about-wrapper {
+    @include notebook{
         flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .card{
-        width: 100%;
-        height: auto;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .job{
-        text-align: center;
-    }
-    .name{
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    .profile-image {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-    }
-
-    .console-list{
-        width: 100%;
     }
 }

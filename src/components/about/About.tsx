@@ -1,15 +1,11 @@
 import SectionWrapper from '../section/SectionWrapper';
-import './About.scss'
+import ConsoleInfo from './ConsoleInfo';
 import Card from './Card';
-import ConsoleInfo from './ConsoleInfo'
-
-// function Card(){
-//     return(
-        
-//     )
-// }
+import MyInfo from '../../static/data/myinfo.json';
+import './About.scss';
 
 function About() {
+    const { name, phone, email, github, birth, university, job } = MyInfo;
     return (
         <SectionWrapper title={'About'}>
             <p>
@@ -18,8 +14,8 @@ function About() {
                 안에서 사람들이 시간을 좀 더 가치 있게 쓸 수 있도록 해주고 싶었습니다.
             </p>
             <div className="about-wrapper">
-                <Card></Card>
-                <ConsoleInfo></ConsoleInfo>
+                <Card job={job} name={name} phone={phone} email={email} github={github}></Card>
+                <ConsoleInfo name={name} birth={birth} university={university}></ConsoleInfo>
             </div>
         </SectionWrapper>
     );

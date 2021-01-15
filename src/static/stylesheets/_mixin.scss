@@ -1,22 +1,17 @@
 @import "./variables";
 
 @mixin mobile {
-    @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
-        @content;
-    }
-}
-@mixin tablet {
-    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-notebook - 1px}) {
+    @media (max-width: #{$breakpoint-mobile}) {
         @content;
     }
 }
 @mixin notebook {
-    @media (min-width: #{$breakpoint-notebook}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @media (max-width: #{$breakpoint-notebook}) {
         @content;
     }
 }
 @mixin desktop {
-    @media (min-width: #{$breakpoint-desktop}) {
+    @media (max-width: #{$breakpoint-desktop}) {
         @content;
     }
 }

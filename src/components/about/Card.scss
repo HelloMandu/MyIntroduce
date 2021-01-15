@@ -1,3 +1,6 @@
+@import '../../static/stylesheets/mixin';
+@import '../../static/stylesheets/variables';
+
 .card {
     display: flex;
     justify-content: space-between;
@@ -17,7 +20,7 @@
         .name {
             color: black;
             font-weight: 700;
-            font-size: var(--font-24px);
+            font-size: $font-size-24px;
         }
         .fa-mobile {
             font-size: 28px;
@@ -41,5 +44,24 @@
         width: 180px;
         height: 100%;
         border-radius: 5px;
+    }
+    @include mobile{
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        .name{
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .job{
+            text-align: center;
+        }
     }
 }

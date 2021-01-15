@@ -1,6 +1,17 @@
+import { useState } from 'react';
+import cn from 'classnames';
+import useInterval from '../../hooks/useInterval';
 import './ConsoleInfo.scss';
 
-function Console() {
+interface ConsoleInfoProps{
+    name: string,
+    birth: string,
+    university: string,
+}
+
+function ConsoleInfo({name, birth, university}: ConsoleInfoProps) {
+    const [underbarHidden, setUnderbarHidden] = useState<boolean>(false);
+    useInterval(() => setUnderbarHidden(state => !state), 500);
     return (
         <ul className="console-list">
             <li className="console">
@@ -22,7 +33,7 @@ function Console() {
             </li>
             <li className="console-item response">
                 <i className="fa fa-angle-left"></i>
-                <span className="cli info"></span>
+                <span className="cli info">{name}</span>
             </li>
             <li className="console-item">
                 <i className="fa fa-angle-right"></i>
@@ -33,7 +44,7 @@ function Console() {
             </li>
             <li className="console-item response">
                 <i className="fa fa-angle-left"></i>
-                <span className="cli info"></span>
+                <span className="cli info">{birth}</span>
             </li>
             <li className="console-item">
                 <i className="fa fa-angle-right"></i>
@@ -44,7 +55,7 @@ function Console() {
             </li>
             <li className="console-item response">
                 <i className="fa fa-angle-left"></i>
-                <span className="cli info"></span>
+                <span className="cli info">{university}</span>
             </li>
             <li className="console-item">
                 <i className="fa fa-angle-right"></i>
@@ -59,7 +70,7 @@ function Console() {
             </li>
             <li className="console-item ">
                 <i className="fa fa-angle-right"></i>
-                <span className="underbar">
+                <span className={cn("underbar", {hidden: underbarHidden})}>
                     <span className="cli">__</span>
                 </span>
             </li>
@@ -67,4 +78,4 @@ function Console() {
     );
 }
 
-export default Console;
+export default ConsoleInfo;
