@@ -1,0 +1,109 @@
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #fe918d;
+    --color-dark-pink: #ff6863;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #fff7d1;
+    --color-orange: #feb546;
+    --color-black: #000000;
+
+    --font-8px: 0.6667rem;
+    --font-10px: 0.8333rem;
+    --font-12px: 1rem;
+    --font-14px: 1.167rem;
+    --font-16px: 1.333rem;
+    --font-18px: 1.5rem;
+    --font-20px: 1.667rem;
+    --font-22px: 1.833rem;
+    --font-24px: 2rem;
+    --font-26px: 2.167rem;
+    --font-28px: 2.333rem;
+    --font-30px: 2.5rem;
+    --font-32px: 2.667rem;
+    --font-34px: 2.833rem;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    --breakpoint-mobile: 0px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-notebook: 1024px;
+    --breakpoint-desktop: 1280px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", 나눔고딕,
+        "NanumGothic", "맑은 고딕", "Malgun Gothic", Ngothic, sans-serif;
+    font-size: var(--font-12px);
+}
+
+h1{
+    font-size: var(--font-28px);
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+h2{
+    font-size: var(--font-18px);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 8px 18px;
+    padding-top: 60px;
+}
+
+.home{
+    padding-top: 0px;
+}
+
+.arrow-up{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 60px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 1px 1px 5px;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+    border-radius: 50%;
+}
+.arrow-up 
+.fa-angle-double-up{
+    font-size: 48px;
+    text-align: center;
+}
+.arrow-on {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+    bottom: 48px;
+}

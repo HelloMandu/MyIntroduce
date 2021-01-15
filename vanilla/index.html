@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sungmin's Portfolio</title>
+    <meta name="keywords" content="portfolio Sungmin Jo 조성민">
+    <meta name="description" content="포트폴리오 - 반갑습니다, 프론트엔드 개발자 조성민입니다">
+    <meta name="author" content="Sungmin Jo">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sungmin Jo's Portfolio">
+    <meta property="og:description" content="포트폴리오 - 반갑습니다, 프론트엔드 개발자 조성민입니다">
+    <meta property="og:url" content="https://temp.com/">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/skills.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <img class="logo" src="./images/logo-removebg.png" alt="logo image"/>
+        <nav class='nav-container'>
+            <ul class="navbar-menu">
+                <li class="navbar-menu-item" data-link="home">Home</li>
+                <li class="navbar-menu-item" data-link="about">About</li>
+                <li class="navbar-menu-item" data-link="skills">Skills</li>
+                <li class="navbar-menu-item" data-link="projects">Projects</li>
+                <li class="navbar-menu-item" data-link="contact">Contact</li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="home-container">
+            <img class="home-profile" src="./images/logo-removebg.png" alt="profile image">
+            <h2 class="home-title">
+                Hi,<br>
+                I'm Web Developer.</h2>
+            <p>
+                끊임없는 배움을 통한 성장,<br>
+                새로운 기술에 대한 지속적인 관심,<br>
+                새로운 배움에 두려움을 두지 않는 태도<br>
+                저는 프론트엔드 개발자입니다.</p>
+        </div>
+    </section>
+    <section id="about">
+        <h1>About</h1>
+        <p>
+            항상 제가 하는 일들이 사람들에게 좀 더 나은 삶을 주었으면 하였고, 일반적인 일들을 통해서는 그 한계가 명확하다고 느낄 수 있었습니다. 그러던 도중 프로그래밍이라는 것을 접하게 되었고,
+            프로그래밍을 통해 사람들에게 이로운 서비스를 개발하고 우리의 인생이라는 한정된 시간 안에서 사람들이 시간을 좀 더 가치 있게 쓸 수 있도록 해주고 싶었습니다.
+        </p>
+        <div class="about-container">
+            <div class="card">
+                <div class="card-introduce">
+                    <div class="card-title">
+                        <p class="job" />
+                        <p class="name" />
+                    </div>
+                    <div>
+                        <p class="card-phone"><i class="fa fa-mobile"></i></p>
+                        <p class="card-email"><i class="fa fa-envelope"></i></p>
+                        <p class="card-github"><i class="fa fa-github"></i></p>
+                    </div>
+                </div>
+                <div class="profile-image"></div>
+            </div>
+            <ul class="console-list">
+                <li class="console">
+                    <span>Console</span>
+                </li>
+                <li class="console-item">
+                    <i class="fa fa-angle-right"></i>
+                    <span class="cli declare">const</span> sungmin = <span class="declare">new</span> Developer();
+                </li>
+                <li class="console-item response undefined">
+                    <i class="fa fa-angle-left"></i>
+                    <span class='cli'>undefined</span>
+                </li>
+                <li class="console-item">
+                    <i class="fa fa-angle-right"></i>
+                    <span class='cli'>sungmin.<span class="method">getName</span>();</span>
+                </li>
+                <li class="console-item response">
+                    <i class="fa fa-angle-left"></i>
+                    <span class='cli info'></span>
+                </li>
+                <li class="console-item">
+                    <i class="fa fa-angle-right"></i>
+                    <span class='cli'> sungmin.<span class="method">getDate</span>();</span>
+                </li>
+                <li class="console-item response">
+                    <i class="fa fa-angle-left"></i>
+                    <span class='cli info'></span>
+                </li>
+                <li class="console-item">
+                    <i class="fa fa-angle-right"></i>
+                    <span class='cli'> sungmin.<span class="method">getUniversity</span>();</span>
+                </li>
+                <li class="console-item response">
+                    <i class="fa fa-angle-left"></i>
+                    <span class='cli info'></span>
+                </li>
+                <li class="console-item">
+                    <i class="fa fa-angle-right"></i>
+                    <span class='cli'> sungmin.<span class="method">getCompany</span>();</span>
+                </li>
+                <li class="console-item response undefined">
+                    <i class="fa fa-angle-left"></i>
+                    <span class='cli'>undefined</span>
+                </li>
+                <li class="console-item ">
+                    <i class="fa fa-angle-right"></i>
+                    <span class="underbar">
+                        <span class='cli'>__</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skill-container">
+        </div>
+    </section>
+    <section id="projects">
+        <h1>Projects</h1>
+        <ul class="project-list">
+            <!-- <li class="project">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <div class="project-title">
+                        <h2>Thisis</h2>
+                        <p>동아대학교 애플리케이션</p>
+                    </div>
+                    <span class="project-tech">
+                        Android/PHP/MYSQL
+                    </span>
+                    <button class="project-more">MORE</button>
+                </div>
+            </li> -->
+        </ul>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <div class="contact-container">
+            <form id='form-email' enctype="text/plain">
+                <input type="name" name="name" placeholder="이름"><br>
+                <input type="email" name="email" placeholder="이메일"><br>
+                <textarea type="text" name="message" placeholder="내용"></textarea>
+                <button type="submit" name="submit">SEND MESSAGE</button>
+            </form>
+            <div class='github-link-wrapper'>
+                <a class='github-link'>
+                    <i class="fa fa-github"></i>
+                </a>
+                <p class='github-url'></p>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p class="copyright">
+            © Sungmin Jo 2020, All rights reserved.
+        </p>
+    </footer>
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-image-wrapper"></div>
+            <div class="modal-info">
+                <div class="modal-title-wrapper">
+                    <h2 class="modal-title"></h2>
+                    <h3 class="modal-subtitle"></h3>
+                </div>
+                <p class="modal-description">
+                </p>
+            </div>
+            <span class="modal-close"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+    <div class="arrow-up">
+        <i class="fa fa-angle-double-up"></i>
+    </div>
+
+    <script type="module" src="./src/model/Skill.js"></script>
+    <script type="module" src="./src/model/Person.js"></script>
+
+    <script type="module" src="./src/skills.js"></script>
+    <script type="module" src="./src/me.js"></script>
+    <script type="module" src="./src/projects.js"></script>
+
+    <script src="./src/about.js"></script>
+    <script src="./src/scroll.js"></script>
+    <script src="./src/home.js"></script>
+    <script src="./src/intersection.js"></script>
+    <script src="./src/email.js"></script>
+
+
+</body>
+
+</html>

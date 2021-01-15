@@ -1,0 +1,104 @@
+#header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    top: 0;
+    font-weight: bold;
+    font-size: var(--font-24px);
+    transition: background-color .3s ease-in-out;
+    width: 100vw;
+    z-index: 1;
+    padding: 0 28px;
+}
+
+.active{
+    background-color: var(--color-white);
+    opacity: 1;
+    box-shadow: 1px 1px 5px;
+}
+
+.logo{
+    width: 65px;
+    height: 100%;
+}
+
+.nav-container{
+    position: relative;
+}
+
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+    width: 480px;
+}
+
+.navbar-menu-item{
+    padding: 8px 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all .15s ease-in-out;
+    color: #222;
+    border-radius: 8px;
+}
+
+.navbar-menu-item.active{
+    color: rgb(67, 166, 231);
+}
+
+.navbar-menu-item:hover{
+    color: rgb(67, 166, 231);
+}
+
+.hamburger{
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bar{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+.on .bar1{
+    transform: rotate(45deg)  translate(7.5px, 7.5px);
+}
+
+.on .bar2{
+    opacity: 0;
+}
+
+.on .bar3{
+    transform: rotate(-45deg) translate(7.5px, -7.5px);
+}
+
+@media screen and (max-width: 768px){
+    .hamburger{
+        display: flex;
+    }
+    .navbar-menu{
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        flex-direction: column;
+        width: auto;
+        top: 120%;
+        right: -40%;
+    }
+    .on .navbar-menu{
+        opacity: 1;
+        pointer-events: auto;
+    }
+}

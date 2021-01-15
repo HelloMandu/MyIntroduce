@@ -1,0 +1,45 @@
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+}
+.skill{
+    padding: 8px 12px;
+}
+.skill h3{
+    margin-bottom: 18px;
+}
+.progress{
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #dbdbdb;
+    border-radius: 8px;
+    margin: 10px 0px;
+}
+.progress-bar{
+    position: absolute;
+    height: 100%;
+    border-radius: 8px;
+    transition: all 1.5s ease-out;
+}
+.progress-percent{
+    position: absolute;
+    transform: translateY(-100%);
+    font-weight: bold;
+    right: 0;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1024px){
+    .skill-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .skill-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
