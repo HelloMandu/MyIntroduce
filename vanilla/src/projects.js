@@ -1,4 +1,4 @@
-import Project from './model/Project.js';
+import Project from '../model/Project.js';
 
 const projects = [
     {

@@ -1,3 +1,5 @@
+@import '../../static/stylesheets/mixin';
+
 #header {
     position: fixed;
     display: flex;
@@ -6,7 +8,7 @@
     height: 65px;
     top: 0;
     font-weight: bold;
-    font-size: var(--font-24px);
+    font-size: $font-size-12px;
     transition: background-color 0.3s ease-in-out;
     width: 100vw;
     z-index: 1;
@@ -24,6 +26,7 @@
             transition: all 0.3s ease-in-out;
             width: 480px;
             .navbar-menu-item {
+                z-index: 1;
                 padding: 8px 12px;
                 cursor: pointer;
                 white-space: nowrap;
@@ -37,6 +40,53 @@
                     color: rgb(67, 166, 231);
                 }
             }
+            @include mobile {
+                position: absolute;
+                opacity: 0;
+                pointer-events: none;
+                flex-direction: column;
+                width: auto;
+                top: 120%;
+                right: -25%;
+            }
+        }
+    }
+    .on {
+        .bar1 {
+            transform: rotate(45deg) translate(7.5px, 7.5px);
+        }
+
+        .bar2 {
+            opacity: 0;
+        }
+
+        .bar3 {
+            transform: rotate(-45deg) translate(7.5px, -7.5px);
+        }
+        @include mobile {
+            .navbar-menu {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    }
+    .hamburger {
+        padding: 8px;
+        width: 48px;
+        height: 48px;
+        display: none;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-around;
+        .bar {
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+        @include mobile {
+            display: flex;
         }
     }
 }
@@ -47,49 +97,4 @@
     box-shadow: 1px 1px 5px;
 }
 
-.hamburger {
-    padding: 8px;
-    width: 48px;
-    height: 48px;
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-around;
-    .bar {
-        width: 35px;
-        height: 5px;
-        background-color: black;
-        transition: 0.4s;
-        cursor: pointer;
-    }
-    .on .bar1 {
-        transform: rotate(45deg) translate(7.5px, 7.5px);
-    }
 
-    .on .bar2 {
-        opacity: 0;
-    }
-
-    .on .bar3 {
-        transform: rotate(-45deg) translate(7.5px, -7.5px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-    .navbar-menu {
-        position: absolute;
-        opacity: 0;
-        pointer-events: none;
-        flex-direction: column;
-        width: auto;
-        top: 120%;
-        right: -40%;
-    }
-    .on .navbar-menu {
-        opacity: 1;
-        pointer-events: auto;
-    }
-}

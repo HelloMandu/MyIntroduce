@@ -1,5 +1,8 @@
+@import '../../static/stylesheets/variables';
+@import '../../static/stylesheets/mixin';
+
 #home {
-    background: url("../../static/images/background.jpg");
+    background: url('../../static/images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,9 +17,12 @@
         padding-top: 80px;
         transition: all 1s ease-in-out;
         opacity: 0;
-        color: var(--color-light-white);
+        color: #ebebeb;
         .home-title {
-            font-family: "Sansita Swashed", cursive;
+            font-family: 'Sansita Swashed', cursive;
+            @include mobile {
+                font-size: $font-size-12px;
+            }
         }
         .home-profile {
             min-width: 240px;
@@ -26,14 +32,5 @@
     .splash {
         padding-top: 60px;
         opacity: 1;
-    }
-}
-
-
-
-
-@media screen and (max-width: 768px) {
-    .home-title {
-        font-size: var(--font-size-12px) !important;
     }
 }

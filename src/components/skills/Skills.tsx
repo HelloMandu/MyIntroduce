@@ -35,7 +35,6 @@ function SkillItem({ title, content, color, percent }: SkillProps) {
                     {`${percent}%`}
                 </span>
                 </div>
-
             </div>
             <p>{content}</p>
         </div>
@@ -44,7 +43,7 @@ function SkillItem({ title, content, color, percent }: SkillProps) {
 
 function Skills() {
     return (
-        <SectionWrapper title={'Skills'}>
+        <SectionWrapper id={'skills'} title={'Skills'}>
             <ul className="skill-wrapper">
                 {SkillList.map(({ title, content, color, percent }, index) => (
                     <li className="skill" key={index}>

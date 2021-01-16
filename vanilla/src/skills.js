@@ -1,4 +1,4 @@
-import Skill from "./model/Skill.js";
+import Skill from "../model/Skill.js";
 
 const skills = [
     {

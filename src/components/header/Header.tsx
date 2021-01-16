@@ -1,11 +1,17 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useState } from 'react';
 import cn from 'classnames';
+import SectionList from '../../static/data/sections.json';
+import { scrolltoLink } from '../../lib/scroll';
 import Logo from '../../static/images/logo.png';
 import './Header.scss';
 
-function Hamburger() {
+interface HamburgerProps {
+    onToggle: () => void;
+}
+
+function Hamburger({ onToggle }: HamburgerProps) {
     return (
-        <div className="hamburger">
+        <div className="hamburger" onClick={onToggle}>
             <div className="bar bar1"></div>
             <div className="bar bar2"></div>
             <div className="bar bar3"></div>
@@ -13,37 +19,32 @@ function Hamburger() {
     );
 }
 
-const navList: string[] = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+interface HeaderProps {
+    active: boolean;
+}
 
-function Header() {
-    const [headerActive, setHeaderActive] = useState<boolean>(false);
-    const headerRef = useRef<HTMLElement>(null);
-    useEffect(() => {
-        const headerHeight: number | undefined = headerRef.current?.getBoundingClientRect().height;
-        function handleHeaderScroll() {
-            if (headerHeight) {
-                if (window.scrollY > headerHeight) {
-                    setHeaderActive(true);
-                } else {
-                    setHeaderActive(false);
-                }
-            }
+function Header({ active }: HeaderProps) {
+    const [activeHamberger, setActiveHamberger] = useState<boolean>(false);
+    const toggleHamburger = useCallback(() => setActiveHamberger((state) => !state), []);
+
+    const handleScroll = useCallback((e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
+        const { link } = e.currentTarget.dataset;
+        if (link) {
+            scrolltoLink(link);
         }
-        window.addEventListener('scroll', () => {handleHeaderScroll()});
-        return window.removeEventListener('scroll', () => {handleHeaderScroll()});
     }, []);
     return (
-        <header id="header" className={cn({ headerActive })} ref={headerRef}>
+        <header id="header" className={cn({ headerActive: active, on: activeHamberger })}>
             <img className="logo" src={Logo} alt="logo" />
-            <nav className="nav-container">
+            <nav className={cn('nav-container', { on: activeHamberger })}>
                 <ul className="navbar-menu">
-                    {navList.map((navitem, index) => (
-                        <li className="navbar-menu-item" data-link={navitem.toLowerCase()} key={index}>
+                    {SectionList.map((navitem, index) => (
+                        <li className="navbar-menu-item" data-link={navitem.toLowerCase()} key={index} onClick={handleScroll}>
                             {navitem}
                         </li>
                     ))}
                 </ul>
-                <Hamburger />
+                <Hamburger onToggle={toggleHamburger} />
             </nav>
         </header>
     );

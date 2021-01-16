@@ -7,8 +7,12 @@
     outline: none;
     border: none;
     border-radius: 0;
-    font-family: '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', 나눔고딕,
-        'NanumGothic', '맑은 고딕', 'Malgun Gothic', Ngothic, sans-serif;
+    font-family: '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', 나눔고딕, 'NanumGothic', '맑은 고딕', 'Malgun Gothic', Ngothic, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 html,
@@ -54,7 +58,6 @@ select::-ms-expand {
     display: none; /* 화살표 없애기 for IE10, 11*/
 }
 
-
 // h1{
 //   font-size: var(--font-28px);
 //   text-decoration: underline;
@@ -65,51 +68,4 @@ select::-ms-expand {
 // h2{
 //   font-size: var(--font-18px);
 //   text-align: center;
-// }
-
-// a {
-//   text-decoration: none;
-//   color: inherit;
-// }
-
-// ul {
-//   list-style: none;
-// }
-
-// section {
-//   padding: 8px 18px;
-//   padding-top: 60px;
-// }
-
-// .home{
-//   padding-top: 0px;
-// }
-
-// .arrow-up{
-//   position: fixed;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   bottom: 60px;
-//   right: 16px;
-//   width: 48px;
-//   height: 48px;
-//   opacity: 0;
-//   pointer-events: none;
-//   box-shadow: 1px 1px 5px;
-//   background-color: #fff;
-//   transition: all 0.3s ease-in;
-//   border-radius: 50%;
-// }
-// .arrow-up 
-// .fa-angle-double-up{
-//   font-size: 48px;
-//   text-align: center;
-// }
-
-// .arrow-on {
-//   opacity: 1;
-//   pointer-events: auto;
-//   cursor: pointer;
-//   bottom: 48px;
 // }

@@ -1,4 +1,4 @@
-import Person from "./model/Person.js";
+import Person from "../model/Person.js";
 
 const myInfo = {
     name: "조성민",
