@@ -17,7 +17,7 @@ function ProjectItem({ title, subtitle, techList, background, onDetail }: Projec
         <>
             <div
                 className="project-image"
-                style={{ backgroundImage: `url(${process.env.PUBLIC_URL + background})` }}
+                style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/${background})` }}
             ></div>
             <div className="project-content">
                 <div className="project-title-wrapper">

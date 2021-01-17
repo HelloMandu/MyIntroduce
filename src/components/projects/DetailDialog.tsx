@@ -36,7 +36,7 @@ function DetailDialog({ on, title, subtitle, description, images, offDialog, git
                     >
                         {images.map((image, index) => (
                             <SwiperSlide className="modal-image-slider" key={index}>
-                                <img src={process.env.PUBLIC_URL + image} alt="detail" className="modal-image" />
+                                <img src={`${process.env.PUBLIC_URL}/${image}`} alt="detail" className="modal-image" />
                             </SwiperSlide>
                         ))}
                     </Swiper>
