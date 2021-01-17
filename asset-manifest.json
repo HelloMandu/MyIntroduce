@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/MyIntroduce/static/css/main.d1b9b820.chunk.css",
+    "main.js": "/MyIntroduce/static/js/main.83828022.chunk.js",
+    "main.js.map": "/MyIntroduce/static/js/main.83828022.chunk.js.map",
+    "runtime-main.js": "/MyIntroduce/static/js/runtime-main.52c2b342.js",
+    "runtime-main.js.map": "/MyIntroduce/static/js/runtime-main.52c2b342.js.map",
+    "static/css/2.5e53cd81.chunk.css": "/MyIntroduce/static/css/2.5e53cd81.chunk.css",
+    "static/js/2.2d49f0f2.chunk.js": "/MyIntroduce/static/js/2.2d49f0f2.chunk.js",
+    "static/js/2.2d49f0f2.chunk.js.map": "/MyIntroduce/static/js/2.2d49f0f2.chunk.js.map",
+    "static/js/3.2bd54e74.chunk.js": "/MyIntroduce/static/js/3.2bd54e74.chunk.js",
+    "static/js/3.2bd54e74.chunk.js.map": "/MyIntroduce/static/js/3.2bd54e74.chunk.js.map",
+    "index.html": "/MyIntroduce/index.html",
+    "static/css/2.5e53cd81.chunk.css.map": "/MyIntroduce/static/css/2.5e53cd81.chunk.css.map",
+    "static/css/main.d1b9b820.chunk.css.map": "/MyIntroduce/static/css/main.d1b9b820.chunk.css.map",
+    "static/js/2.2d49f0f2.chunk.js.LICENSE.txt": "/MyIntroduce/static/js/2.2d49f0f2.chunk.js.LICENSE.txt",
+    "static/media/Home.scss": "/MyIntroduce/static/media/background.ae912aa6.jpg",
+    "static/media/logo.8bada592.png": "/MyIntroduce/static/media/logo.8bada592.png",
+    "static/media/Card.scss": "/MyIntroduce/static/media/profile.26cc940c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.52c2b342.js",
+    "static/css/2.5e53cd81.chunk.css",
+    "static/js/2.2d49f0f2.chunk.js",
+    "static/css/main.d1b9b820.chunk.css",
+    "static/js/main.83828022.chunk.js"
+  ]
+}
