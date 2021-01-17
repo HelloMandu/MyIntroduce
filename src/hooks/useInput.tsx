@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 
-const useInput = (initialForm: any): any[] => {
+function useInput(initialForm: any): any[] {
     const [state, setState] = useState<any>(initialForm);
     const onChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;

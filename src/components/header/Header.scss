@@ -33,12 +33,14 @@
                 transition: all 0.15s ease-in-out;
                 color: #222;
                 border-radius: 8px;
-                &:active {
-                    color: rgb(67, 166, 231);
-                }
                 &:hover {
                     color: rgb(67, 166, 231);
                 }
+            }
+            .active{
+                color: rgb(67, 166, 231);
+                box-shadow: 1px 1px 3px rgb(67, 166, 231);
+                background-color: #fff;
             }
             @include mobile {
                 position: absolute;

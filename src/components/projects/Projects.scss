@@ -9,10 +9,14 @@
         position: relative;
         width: 300px;
         height: 300px;
+        margin: 8px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 3px;
+        background-color: rgba(0, 0, 0, 0.6);
         .project-image {
             width: 100%;
             height: 100%;
-            background-image: url('../../static/images/background.jpg');
+            border-radius: 15px;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -22,7 +26,8 @@
             opacity: 0;
             transition: all 0.3s ease-in-out;
             z-index: 1;
-            .project-title {
+            color: $color-ebebeb;
+            .project-title-wrapper {
                 position: absolute;
                 text-align: center;
                 width: 100%;
@@ -33,6 +38,10 @@
                 h2 {
                     margin-bottom: 4px;
                 }
+                h3 {
+                    margin-bottom: 4px;
+                    font-size: $font-size-12px;
+                }
             }
             .project-tech {
                 display: flex;
@@ -40,6 +49,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                white-space: nowrap;
             }
             .project-more {
                 position: absolute;
@@ -53,10 +63,8 @@
                 font-size: $font-size-16px;
                 font-weight: bold;
                 cursor: pointer;
-                &:hover {
-                    background-color: $color-blue;
-                    color: #fff;
-                }
+                color: $color-ebebeb;
+                background-color: $color-blue;
             }
         }
         &:hover {
@@ -65,7 +73,7 @@
             }
             .project-content {
                 opacity: 1;
-                .project-title {
+                .project-title-wrapper {
                     top: 75px;
                 }
                 .project-more {

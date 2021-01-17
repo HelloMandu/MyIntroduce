@@ -1,25 +1,145 @@
 [
     {
-        "title": "Thisis",
-        "subtitle": "동아대학교 애플리케이션",
+        "title": "MyPortpolio",
+        "subtitle": "포트폴리오 홈페이지",
+        "background": "background.jpg",
         "images": [
-            "logo.png"
+            "background.jpg"
         ],
         "techList": [
-            "Android", "PHP", "MYSQL", "cron"
+            "TypeScript", "React", "Hooks"
         ],
-        "description": "kakaomap을 이용하여 부산광역시 내의 cctv, 학교, 주차장 위치를 마커로 표시하였습니다.Koa.js를 이용해 api 서버를 만들어 주변 2KM이내 정보만 표시하였습니다Redux, Redux-Saga를 사용하여 위치정보를 요청하고 정리하였습니다"
+        "description": "현재 포트폴리오 페이지입니다. TypeScript를 리액트 프로젝트에 적용하였습니다.",
+        "github": "https://github.com/HelloMandu/MyIntroduce"
     },
     {
-        "title": "Thisis2",
-        "subtitle": "동아대학교 애플리케이션",
+        "title": "TweetChallenge",
+        "subtitle": "챌린지 공유 서비스",
+        "background": "tweetchallenge/tc.png",
         "images": [
-            "logo.png"
+            "tweetchallenge/tc.png",
+            "tweetchallenge/tc2.png",
+            "tweetchallenge/tc3.png",
+            "tweetchallenge/tc4.png"
         ],
         "techList": [
-            "Android", "PHP", "MYSQL", "cron"
+            "TypeScript", "React", "Express", "MongoDB"
         ],
-        "description": "kakaomap을 이용하여 부산광역시 내의 cctv, 학교, 주차장 위치를 마커로 표시하였습니다.Koa.js를 이용해 api 서버를 만들어 주변 2KM이내 정보만 표시하였습니다Redux, Redux-Saga를 사용하여 위치정보를 요청하고 정리하였습니다."
+        "description": "TypeScript를 학습하고 리액트 프로젝트에 적용하기 위한 개인프로젝트입니다. 현재 로그인, 회원가입, 챌린지 등록, 목록보기 기능이 구현되어 있으며 현재 개인적으로 진행중인 프로젝트 입니다.",
+        "github": "https://github.com/HelloMandu/TweetChallenge"
+    },
+    {
+        "title": "모두의 주차장",
+        "subtitle": "주차장 공유 플랫폼",
+        "background": "parking/parking.png",
+        "images": [
+            "parking/parking0.png",
+            "parking/parking1.png",
+            "parking/parking2.png",
+            "parking/parking3.png",
+            "parking/parking4.png",
+            "parking/parking5.png",
+            "parking/parking6.png",
+            "parking/parking7.png",
+            "parking/parking8.png",
+            "parking/parking9.png",
+            "parking/parking10.png"
+        ],
+        "techList": [
+            "React", "Express", "MYSQL", "카카오api"
+        ],
+        "description": "모두의 주차장 주차공유 플랫폼으로 외주 개발한 프로젝트 입니다. 주차공간 등록, 결제, 휴대폰인증 로그인 등 웹에서 사용하는 대부분의 기능을 사용해 웹앱의 전체적인 흐름을 이해할 수 있었습니다.",
+        "github": "https://intospace.kr/"
+    },
+
+
+    {
+        "title": "PreventParking",
+        "subtitle": "불법주정차 방지 서비스",
+        "background": "preventparking/preventparking.jpg",
+        "images": [
+            "preventparking/preventparking.jpg",
+            "preventparking/preventparking.png",
+            "preventparking/preventparking1.png",
+            "preventparking/preventparking2.png",
+            "preventparking/preventparking3.png",
+            "preventparking/preventparking4.png"
+        ],
+        "techList": [
+            "React", "Koa", "Hook",  "카카오api"
+        ],
+        "description": "kakaomap을 이용하여 부산광역시 내의 cctv, 학교, 주차장 위치를 마커로 표시하였습니다.Koa.js를 이용해 api 서버를 만들어 주변 2KM이내 정보만 표시하였습니다Redux, Redux-Saga를 사용하여 위치정보를 요청하고 정리하였습니다.",
+        "github": "https://github.com/HelloMandu/PreventionOfllegalParking"
+    },
+    {
+        "title": "Movie App",
+        "subtitle": "영화 api를 이용한 Movie App",
+        "background": "yja/yja.png",
+        "images": [
+            "yja/yja.png"
+        ],
+        "techList": [
+            "React", "Hook", "axios", "Swiper"
+        ],
+        "description": "영화 api를 이용해 목록을 장르별로 filter하고 swiper를 이용해 포스터를 동적으로 볼 수 있도록 구성하였습니다.",
+        "github": "https://github.com/HelloMandu/yja"
+    },
+    {
+        "title": "News App",
+        "subtitle": "리액트 기본기를 다지기 위한 News App",
+        "background": "news/news.png",
+        "images": [
+            "news/news.png"
+        ],
+        "techList": [
+            "React", "Hook", "axios"
+        ],
+        "description": "뉴스 api와 axios를 이용해 비동기 통신을 이용해 데이터를 다루는 기술과 커스텀 훅을 만들어 중복되는 로직을 최소화시키는 방법을 학습하였습니다.",
+        "github": "https://github.com/HelloMandu/Todo"
+    },
+    {
+        "title": "Todo App",
+        "subtitle": "리액트 기본기를 다지기 위한 Todo App",
+        "background": "todo/todo.png",
+        "images": [
+            "todo/todo.png"
+        ],
+        "techList": [
+            "React", "Hook"
+        ],
+        "description": "리액트를 처음 학습하면서 진행한 프로젝트입니다. useCallback, useReducer등 리액트 훅을 사용하였고 virtualized와 memo를 이용해 최적화를 학습하였습니다.",
+        "github": "https://github.com/HelloMandu/Todo"
+    },
+    {
+        "title": "Shopping",
+        "subtitle": "바닐라 자바스크립트를 이용한 쇼핑리스트",
+        "background": "shopping/shopping.png",
+        "images": [
+            "shopping/shopping.png"
+        ],
+        "techList": [
+            "HTML", "CSS", "JavaScript"
+        ],
+        "description": "map, filter, fetch 등 자주 사용하는 자바스크립트 함수를 이용해 데이터를 다루고, flex를 이용해 레이아웃 구성을 학습했습니다.",
+        "github": "https://github.com/HelloMandu/shopping"
+    },
+    {
+        "title": "Thisis",
+        "subtitle": "동아대학교 애플리케이션",
+        "background": "thisis/ThisisLogo.png",
+        "images": [
+            "thisis/ThisisMain.png",
+            "thisis/weshow.png",
+            "thisis/weshow2.png",
+            "thisis/Schedule.png",
+            "thisis/CallNumber.png",
+            "thisis/Cafeteria.png",
+            "thisis/Cafeteria.png"
+        ],
+        "techList": [
+            "Android", "PHP", "MYSQL"
+        ],
+        "description": "스마트한 동아인의 필수 App은 무엇? 바로 이것(This is)! 동아대학교 애플리케이션 디스이즈 개발팀에서 만든 애플리케이션으로 학식, 전화번호, 학생정보, 시간표 경우의 수 추출 등 동아대학교 학생들을 위한 애플리케이션입니다.",
+        "github": "https://github.com/HelloMandu/Thisis"
     }
-    
 ]

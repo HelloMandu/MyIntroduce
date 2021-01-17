@@ -9,7 +9,7 @@ interface SectionWrapperProps {
 function SectionWrapper({ id, title, children }: SectionWrapperProps) {
     return (
         <section className="section-wrapper" id={id}>
-            <h1>{title}</h1>
+            <h1 className="section-title">{title}</h1>
             {children}
         </section>
     );
