@@ -55,6 +55,10 @@
                 padding: 8px 0px;
                 margin-bottom: 8px;
                 border-bottom: 2px solid $color-ebebeb;
+                @include mobile{
+                    padding: 4px 0px;
+                    margin-bottom: 4px;
+                }
             }
             .modal-title {
                 text-align: left;
@@ -95,7 +99,7 @@
             font-size: $font-size-24px;
             cursor: pointer;
             top: 0px;
-            right: 12px;
+            right: 16px;
             z-index: 100;
         }
     }
