@@ -44,13 +44,11 @@ function Projects() {
         techList: [],
     });
     const openDialog = useCallback((dialogInfo: DialogInfo) => {
-        console.log(dialogInfo);
         setDialogContent(dialogInfo);
         setOnDialog(true);
     }, []);
     const offDialog = useCallback(() => setOnDialog(false), []);
     const { title, subtitle, description, images, github, techList }: DialogInfo = dialogContent;
-    console.log(images);
     return (
         <>
             <SectionWrapper id={'projects'} title={'Projects'}>
