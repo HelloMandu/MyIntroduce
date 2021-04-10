@@ -1,3 +1,3 @@
 # MyIntroduce
 
-[URL](https://hellomandu.github.io/MyIntroduce/)
+[MyIntroduce](https://hellomandu.github.io/MyIntroduce/)
